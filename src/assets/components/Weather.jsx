@@ -16,7 +16,6 @@ const Weather = () => {
             setWeatherData(data);
             setError(null);
         } catch (error) {
-            console.log(error);
             setError(error.message);
             setWeatherData(null);
         }
