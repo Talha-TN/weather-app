@@ -4,6 +4,7 @@ const Weather = () => {
     const [city, setCity] = useState('');
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState(null);
+
     const fetchWeather = async () => {
         try {
             const response = await fetch(
